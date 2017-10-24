@@ -1,0 +1,55 @@
+$button-size: 10vmin;
+
+.menu-ui-container {
+  color: white;
+  display: inline-block;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.sequence-count {
+  display: block;
+  color: white;
+  font-size: $button-size;
+  height: $button-size;
+  margin: 0 auto;
+  width: $button-size;
+}
+
+.victory {
+  font-size: $button-size;
+  color: white;
+  display: block;
+  height: $button-size;
+  margin: 0 auto;
+}
+
+.button-container {
+  color: white;
+  display: inline-block;
+  font-size: $button-size / 3;
+}
+
+.button {
+  display: block;
+  height: $button-size;
+  margin: 2.5vmin;
+  width: $button-size;
+}
+
+.reset-button {
+  @extend .button;
+  background-color: nth($button-colors, 8);
+}
+
+.strict-button {
+  @extend .button;
+  background-color: nth($button-colors, 1);
+}
+
+.enabled {
+  background-color: nth($button-colors, 6);
+}

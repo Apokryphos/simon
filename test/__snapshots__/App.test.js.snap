@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App rendering Renders OK 1`] = `
+<div
+  id="app"
+>
+  <RadialList
+    buttonCount={8}
+    gameController={
+      t {
+        "_events": Object {
+          "activateGameButton": Array [],
+        },
+        "game": Game {
+          "buttonCount": 8,
+          "getRandomButton": [Function],
+          "sequence": Array [
+            0,
+          ],
+          "sequenceIndex": 0,
+          "strict": false,
+        },
+        "playDelay": 1100,
+        "state": 0,
+        "victoryCount": 20,
+      }
+    }
+    onClick={[Function]}
+  />
+  <div
+    className="menu-ui-container"
+  >
+    <Title
+      text="Simon"
+    />
+    <SequenceCount
+      count={1}
+    />
+    <ResetButton
+      onClick={[Function]}
+    />
+    <StrictButton
+      enabled={false}
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`App rendering Renders OK after victory 1`] = `
+<div
+  id="app"
+>
+  <RadialList
+    buttonCount={8}
+    gameController={
+      t {
+        "_events": Object {
+          "activateGameButton": Array [],
+        },
+        "game": Game {
+          "buttonCount": 8,
+          "getRandomButton": [Function],
+          "sequence": Array [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+          ],
+          "sequenceIndex": 5,
+          "strict": false,
+        },
+        "playDelay": 1100,
+        "state": 0,
+        "victoryCount": 20,
+      }
+    }
+    onClick={[Function]}
+  />
+  <div
+    className="menu-ui-container"
+  >
+    <Title
+      text="Simon"
+    />
+    <SequenceCount
+      count={1}
+    />
+    <ResetButton
+      onClick={[Function]}
+    />
+    <StrictButton
+      enabled={false}
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;

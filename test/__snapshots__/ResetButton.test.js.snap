@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResetButton rendering Renders OK 1`] = `
+<div
+  className="button-container"
+  title="Resets the game."
+>
+  <button
+    className="reset-button"
+    onClick={[Function]}
+  />
+  <span
+    className="button-label"
+  >
+    Reset
+  </span>
+</div>
+`;

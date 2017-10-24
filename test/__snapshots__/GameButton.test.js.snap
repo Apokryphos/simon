@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GameButton rendering Renders OK 1`] = `
+<button
+  className=""
+  onClick={[Function]}
+/>
+`;

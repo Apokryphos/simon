@@ -1,0 +1,32 @@
+$radial-button-count: 8;
+$radial-button-size: 19vmin;
+$radial-radius: $radial-button-size * 2;
+
+@mixin RadialButton($index) {
+  @content;
+
+  $deg: 360 / $radial-button-count * ($index - 3);
+  transform: rotate(#{$deg}deg) translate($radial-radius, 0);
+}
+
+.radial-menu {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+
+  button {
+    border-width: $button-border-size;
+    height: $radial-button-size;
+    left: -$radial-button-size / 2;
+    position: absolute;
+    top: -$radial-button-size / 2;
+    width: $radial-button-size;
+  }
+
+  @for $i from 1 through $radial-button-count {
+    button:nth-of-type(#{$i}) {
+      @include Button($i);
+      @include RadialButton($i);
+    }
+  }
+}

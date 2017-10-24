@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SequenceCount rendering Renders OK 1`] = `
+<span
+  className="sequence-count"
+  title="Number of button presses in current sequence."
+>
+  0
+</span>
+`;

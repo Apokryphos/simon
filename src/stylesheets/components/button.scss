@@ -1,0 +1,79 @@
+$button-colors: #ff6363, #ff63d8, #ac63ff, #6384ff, #63ffe3, #63ff84, #e3ff63, #ffb063;
+$button-border-size: 0.5vmin;
+$button-glow-size: $button-border-size * 2;
+$button-size: 15vmin;
+
+@mixin ButtonNormal($color) {
+  background-color: $color;
+  border-color: darken($color, 25%);
+}
+
+@mixin ButtonHover($color) {
+  background-color: lighten($color, 10%);
+  border-color: darken($color, 15%);
+}
+
+@mixin ButtonGlow($color) {
+  background-color: lighten($color, 15%);
+  border-color: $color;
+  box-shadow: 0 0 $button-glow-size $button-glow-size lighten($color, 20%);
+}
+
+@mixin ButtonAnimation($color) {
+  0% {
+    @include ButtonNormal($color);
+  }
+
+  40% {
+    @include ButtonGlow($color);
+  }
+
+  100% {
+    @include ButtonNormal($color);
+  }
+}
+
+@mixin Button($index) {
+  @content;
+
+  $color: nth($button-colors, $index);
+  @include ButtonNormal($color);
+
+  &:hover {
+    @include ButtonHover($color);
+  }
+
+  $animation-name: button-animation-#{$index};
+
+  &.pulse {
+    animation-name: $animation-name;
+  }
+
+  @at-root {
+    @keyframes #{$animation-name} {
+      @include ButtonAnimation($color);
+    }
+  }
+}
+
+button {
+  border-width: $button-border-size;
+  border-radius: 50%;
+  border-style: solid;
+  height: $button-size;
+  outline: none;
+  width: $button-size;
+
+  $duration: 0.33s;
+  transition: background-color $duration, border-color $duration, box-shadow $duration;
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+}
+
+.pulse {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}

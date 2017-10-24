@@ -1,0 +1,16 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": ["airbnb", "plugin:flowtype/recommended"],
+  "plugins": ["flowtype", "compat"],
+  "rules": {
+    "compat/compat": 2,
+    "no-plusplus": 0
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  }
+}

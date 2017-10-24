@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StrictButton rendering Renders OK 1`] = `
+<div
+  className="button-container"
+  title="Toggles strict mode. In strict mode, the sequence resets if you press the wrong button."
+>
+  <button
+    className="strict-button enabled"
+    onClick={[Function]}
+  />
+  <span
+    className="button-label"
+  >
+    Strict
+  </span>
+</div>
+`;

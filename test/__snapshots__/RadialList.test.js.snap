@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadialList rendering Renders OK 1`] = `
+<div
+  className="radial-menu"
+>
+  <GameButton
+    buttonIndex={0}
+    gameController={
+      t {
+        "game": Game {
+          "buttonCount": 8,
+          "getRandomButton": [Function],
+          "sequence": Array [
+            0,
+          ],
+          "sequenceIndex": 0,
+          "strict": false,
+        },
+        "playDelay": 1100,
+        "state": 0,
+        "victoryCount": 20,
+      }
+    }
+    key="0"
+    onClick={[Function]}
+  />
+  <GameButton
+    buttonIndex={1}
+    gameController={
+      t {
+        "game": Game {
+          "buttonCount": 8,
+          "getRandomButton": [Function],
+          "sequence": Array [
+            0,
+          ],
+          "sequenceIndex": 0,
+          "strict": false,
+        },
+        "playDelay": 1100,
+        "state": 0,
+        "victoryCount": 20,
+      }
+    }
+    key="1"
+    onClick={[Function]}
+  />
+  <GameButton
+    buttonIndex={2}
+    gameController={
+      t {
+        "game": Game {
+          "buttonCount": 8,
+          "getRandomButton": [Function],
+          "sequence": Array [
+            0,
+          ],
+          "sequenceIndex": 0,
+          "strict": false,
+        },
+        "playDelay": 1100,
+        "state": 0,
+        "victoryCount": 20,
+      }
+    }
+    key="2"
+    onClick={[Function]}
+  />
+  <GameButton
+    buttonIndex={3}
+    gameController={
+      t {
+        "game": Game {
+          "buttonCount": 8,
+          "getRandomButton": [Function],
+          "sequence": Array [
+            0,
+          ],
+          "sequenceIndex": 0,
+          "strict": false,
+        },
+        "playDelay": 1100,
+        "state": 0,
+        "victoryCount": 20,
+      }
+    }
+    key="3"
+    onClick={[Function]}
+  />
+  <GameButton
+    buttonIndex={4}
+    gameController={
+      t {
+        "game": Game {
+          "buttonCount": 8,
+          "getRandomButton": [Function],
+          "sequence": Array [
+            0,
+          ],
+          "sequenceIndex": 0,
+          "strict": false,
+        },
+        "playDelay": 1100,
+        "state": 0,
+        "victoryCount": 20,
+      }
+    }
+    key="4"
+    onClick={[Function]}
+  />
+  <GameButton
+    buttonIndex={5}
+    gameController={
+      t {
+        "game": Game {
+          "buttonCount": 8,
+          "getRandomButton": [Function],
+          "sequence": Array [
+            0,
+          ],
+          "sequenceIndex": 0,
+          "strict": false,
+        },
+        "playDelay": 1100,
+        "state": 0,
+        "victoryCount": 20,
+      }
+    }
+    key="5"
+    onClick={[Function]}
+  />
+  <GameButton
+    buttonIndex={6}
+    gameController={
+      t {
+        "game": Game {
+          "buttonCount": 8,
+          "getRandomButton": [Function],
+          "sequence": Array [
+            0,
+          ],
+          "sequenceIndex": 0,
+          "strict": false,
+        },
+        "playDelay": 1100,
+        "state": 0,
+        "victoryCount": 20,
+      }
+    }
+    key="6"
+    onClick={[Function]}
+  />
+  <GameButton
+    buttonIndex={7}
+    gameController={
+      t {
+        "game": Game {
+          "buttonCount": 8,
+          "getRandomButton": [Function],
+          "sequence": Array [
+            0,
+          ],
+          "sequenceIndex": 0,
+          "strict": false,
+        },
+        "playDelay": 1100,
+        "state": 0,
+        "victoryCount": 20,
+      }
+    }
+    key="7"
+    onClick={[Function]}
+  />
+</div>
+`;
