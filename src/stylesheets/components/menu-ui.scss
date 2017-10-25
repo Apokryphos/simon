@@ -1,4 +1,4 @@
-$button-size: 10vmin;
+$button-size: 8rem;
 
 .menu-ui-container {
   color: white;
@@ -13,10 +13,10 @@ $button-size: 10vmin;
 .sequence-count {
   display: block;
   color: white;
-  font-size: $button-size;
-  height: $button-size;
-  margin: 0 auto;
-  width: $button-size;
+  font-size: $button-size * 2;
+  height: $button-size * 2;
+  margin: 0 auto 3rem auto;
+  width: $button-size * 2;
 }
 
 .victory {
@@ -34,9 +34,10 @@ $button-size: 10vmin;
 }
 
 .button {
+  border-color: white;
   display: block;
   height: $button-size;
-  margin: 2.5vmin;
+  margin: 2.5rem;
   width: $button-size;
 }
 

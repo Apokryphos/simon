@@ -2,7 +2,7 @@
 
 exports[`RadialList rendering Renders OK 1`] = `
 <div
-  className="radial-menu"
+  className="radial-list"
 >
   <GameButton
     buttonIndex={0}

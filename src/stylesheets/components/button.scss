@@ -1,16 +1,18 @@
 $button-colors: #ff6363, #ff63d8, #ac63ff, #6384ff, #63ffe3, #63ff84, #e3ff63, #ffb063;
-$button-border-size: 0.5vmin;
+$button-border-size: 0.5rem;
 $button-glow-size: $button-border-size * 2;
-$button-size: 15vmin;
+$button-size: 15rem;
 
 @mixin ButtonNormal($color) {
   background-color: $color;
   border-color: darken($color, 25%);
+  box-shadow: 0 0 0 0 transparent;
 }
 
 @mixin ButtonHover($color) {
   background-color: lighten($color, 10%);
   border-color: darken($color, 15%);
+  box-shadow: 0 0 0 0 transparent;
 }
 
 @mixin ButtonGlow($color) {

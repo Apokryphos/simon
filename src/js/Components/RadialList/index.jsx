@@ -17,7 +17,7 @@ function RadialList(props) {
   }
 
   return (
-    <div className="radial-menu">
+    <div className="radial-list">
       {buttons}
     </div>
   );

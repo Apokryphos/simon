@@ -1,5 +1,5 @@
 $radial-button-count: 8;
-$radial-button-size: 19vmin;
+$radial-button-size: 19rem;
 $radial-radius: $radial-button-size * 2;
 
 @mixin RadialButton($index) {
@@ -9,7 +9,7 @@ $radial-radius: $radial-button-size * 2;
   transform: rotate(#{$deg}deg) translate($radial-radius, 0);
 }
 
-.radial-menu {
+.radial-list {
   left: 50%;
   position: absolute;
   top: 50%;
