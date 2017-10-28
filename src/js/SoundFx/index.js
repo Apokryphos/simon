@@ -2,16 +2,21 @@ import { Howl } from 'howler';
 
 const SFX_COUNT = 8;
 
+function getSrc(prefix, index) {
+  const base = `sound/${prefix}-${index + 1}`;
+  return [`${base}.ogg`, `${base}.mp3`];
+}
+
 export default (function SoundFx() {
   const sounds = [];
 
   for (let s = 0; s < SFX_COUNT; ++s) {
-    const sfx = new Howl({ src: [`sound/simon-${s + 1}.mp3`] });
+    const sfx = new Howl({ src: getSrc('simon', s) });
     sounds.push(sfx);
   }
 
   for (let s = 0; s < SFX_COUNT; ++s) {
-    const sfx = new Howl({ src: [`sound/fail-${s + 1}.mp3`] });
+    const sfx = new Howl({ src: getSrc('fail', s) });
     sounds.push(sfx);
   }
 

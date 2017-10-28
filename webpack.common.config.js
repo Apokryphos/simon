@@ -49,5 +49,6 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new CopyWebpackPlugin([{ from: 'src/html/index.html', flatten: true }]),
     new CopyWebpackPlugin([{ from: 'src/sound/*.mp3', to: 'sound', flatten: true }]),
+    new CopyWebpackPlugin([{ from: 'src/sound/*.ogg', to: 'sound', flatten: true }]),
   ],
 };
