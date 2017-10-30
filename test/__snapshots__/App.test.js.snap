@@ -21,6 +21,7 @@ exports[`App rendering Renders OK 1`] = `
           "strict": false,
         },
         "playDelay": 1100,
+        "playSequenceTimeoutId": null,
         "state": 0,
         "victoryCount": 20,
       }
@@ -73,6 +74,7 @@ exports[`App rendering Renders OK after victory 1`] = `
           "strict": false,
         },
         "playDelay": 1100,
+        "playSequenceTimeoutId": 8,
         "state": 0,
         "victoryCount": 20,
       }

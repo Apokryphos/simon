@@ -18,6 +18,7 @@ exports[`RadialList rendering Renders OK 1`] = `
           "strict": false,
         },
         "playDelay": 1100,
+        "playSequenceTimeoutId": null,
         "state": 0,
         "victoryCount": 20,
       }
@@ -39,6 +40,7 @@ exports[`RadialList rendering Renders OK 1`] = `
           "strict": false,
         },
         "playDelay": 1100,
+        "playSequenceTimeoutId": null,
         "state": 0,
         "victoryCount": 20,
       }
@@ -60,6 +62,7 @@ exports[`RadialList rendering Renders OK 1`] = `
           "strict": false,
         },
         "playDelay": 1100,
+        "playSequenceTimeoutId": null,
         "state": 0,
         "victoryCount": 20,
       }
@@ -81,6 +84,7 @@ exports[`RadialList rendering Renders OK 1`] = `
           "strict": false,
         },
         "playDelay": 1100,
+        "playSequenceTimeoutId": null,
         "state": 0,
         "victoryCount": 20,
       }
@@ -102,6 +106,7 @@ exports[`RadialList rendering Renders OK 1`] = `
           "strict": false,
         },
         "playDelay": 1100,
+        "playSequenceTimeoutId": null,
         "state": 0,
         "victoryCount": 20,
       }
@@ -123,6 +128,7 @@ exports[`RadialList rendering Renders OK 1`] = `
           "strict": false,
         },
         "playDelay": 1100,
+        "playSequenceTimeoutId": null,
         "state": 0,
         "victoryCount": 20,
       }
@@ -144,6 +150,7 @@ exports[`RadialList rendering Renders OK 1`] = `
           "strict": false,
         },
         "playDelay": 1100,
+        "playSequenceTimeoutId": null,
         "state": 0,
         "victoryCount": 20,
       }
@@ -165,6 +172,7 @@ exports[`RadialList rendering Renders OK 1`] = `
           "strict": false,
         },
         "playDelay": 1100,
+        "playSequenceTimeoutId": null,
         "state": 0,
         "victoryCount": 20,
       }

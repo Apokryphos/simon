@@ -9,6 +9,7 @@ function GameController(game, playDelay) {
   this.playDelay = playDelay || 1100;
   this.game = game;
   this.victoryCount = 20;
+  this.playSequenceTimeoutId = null;
   this.reset();
 }
 
@@ -42,7 +43,7 @@ GameController.prototype.playSequence = function playSequence(sequence) {
       this.emitEvent('activateGameButton', [seq[seqIndex++], true]);
 
       if (seq.length > seqIndex) {
-        setTimeout(play, this.playDelay);
+        this.playSequenceTimeoutId = setTimeout(play, this.playDelay);
       } else {
         this.state = GameState.READY;
       }
@@ -55,6 +56,7 @@ GameController.prototype.playSequence = function playSequence(sequence) {
 };
 
 GameController.prototype.reset = function reset(buttonCount = 8) {
+  clearTimeout(this.playSequenceTimeoutId);
   this.game.reset(buttonCount);
   this.state = GameState.READY;
 };
@@ -65,19 +67,23 @@ GameController.prototype.submit = function submit(buttonIndex) {
   }
 
   if (this.state === GameState.READY) {
+    const playSeq = () => {
+      this.playSequenceTimeoutId = setTimeout(() => this.playSequence(), this.playDelay);
+    };
+
     const lastSequenceLength = this.game.getSequence().length;
     if (this.game.submit(buttonIndex)) {
       this.emitEvent('activateGameButton', [buttonIndex, true]);
       if (lastSequenceLength !== this.game.getSequence().length) {
         //  Don't play sequence after winning
         if (!this.getVictory()) {
-          setTimeout(() => this.playSequence(), this.playDelay);
+          playSeq();
         }
       }
     } else {
       this.emitEvent('activateGameButton', [buttonIndex, false]);
       this.state = GameState.BUSY;
-      setTimeout(() => this.playSequence(), this.playDelay);
+      playSeq();
     }
   }
 };
