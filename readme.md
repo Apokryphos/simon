@@ -1,6 +1,6 @@
 # Simon
 
-Simon-like game for freeCodeCamp.
+Simon browser game in Javascript.
 
 ## Issues
 
